@@ -115,6 +115,10 @@ color: var(--secondary-text-color);
  .header-address .header-address-item:last-child {
  margin-right: 0;
  }
+ .header-icon-svg {
+   margin-right: 5px;
+   fill: currentColor;
+ }
 
 /*----------HERO---------*/
 
@@ -190,6 +194,18 @@ flex-basis: calc((100% - 120px) / 4);
 .about-item:not(:first-child) {
 margin-left: 30px;
 }
+.icon {
+  display: flex;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  align-items: center;
+  justify-content: center;
+}
+.pic-svg {
+  width: 70px;
+  height: 70px;
+}
 .about-after-title {
 min-width: 270px;
 margin: 0 auto;
@@ -240,6 +256,7 @@ margin-left: 30px;
 .time {
 padding-top: 47px;
 padding-bottom: 47px;
+background-color: #F5F4FA;
 }
 .time-container .time-title {
   align-items: center;
@@ -251,16 +268,21 @@ padding-bottom: 47px;
   justify-content: center;
 }
 .time-product {
+  background: var(--primary-title-color);
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 0px 0px 4px 4px;
+}
+.time-product {
 flex-basis:calc((100% - 120px) / 4);
 }
 .time-product:not(:first-child) {
   margin-left: 30px;
 }
-.time-text{
+.time-text {
 padding-top: 30px;
 padding-bottom: 30px;
 }
-.time-name{
+.time-name {
 padding-bottom: 10px;
 }
 .time-title {
@@ -299,10 +321,85 @@ margin-left: 10px;
 .social-link {
   width: 100%;
   height: 100%;
-  display: block;
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
   background-color: var(--primary-title-color);
 }
+.social-link:hover, 
+.social-link:focus {
+background-color: var(--accent-color);
+}
+.social-link:hover .social-icon, 
+.social-link:focus .social-icon {
+fill: var(--primary-title-color);
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
+}
+/*-------CLIENTS---------*/
+.clients {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+.foto-clients-title {
+  color: var(--secondary-title-color);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.foto-clients-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-inline-start: 0;
+  margin-inline-end: 0;
+  align-items: center;
+}
+.clients-foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients-foto {
+  margin-right: 30px;
+}
+.clients-foto:last-child {
+margin-right: 0;
+}
+.clients-foto-link {
+  display: flex;
+    width: 170px;
+    height: 92px;
+    color: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+.clients-foto-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+.clients-foto-link:hover, 
+.clients-foto-link:focus {
+background-color: var(--primary-title-color);
+}
+.clients-foto-link:hover .clients-foto-icon, 
+.clients-foto-link:focus .clients-foto-icon {
+fill: var(--accent-color);
+}
+
 /*-------FOOTER------*/
 .footer-navigation {
   background-color: #2F303A;
@@ -351,6 +448,46 @@ color: rgba(255, 255, 255, 0.6);
 .footer-addres-link:hover,
 .footer-addres-link:focus {
   color: var(--accent-color);
+}
+.footer-social {
+  align-items: baseline;
+  text-align: left;
+}
+.footer-social-title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+.footer-social-list {
+  padding: 0;
+  display: flex;
+}
+.footer-social-item {
+  list-style: none;
+  padding-inline-start: 0;
+  display: flex;
+  justify-content: center;
+}
+.footer-social-link {
+  display: flex;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-text-color);
 }
 
 /*--------PORTFOLIO------*/
